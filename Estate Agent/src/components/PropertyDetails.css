@@ -1,0 +1,81 @@
+/* Container for the Property Page */
+.property-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* White background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Short Description Section */
+.property-details .short-description {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.property-details .short-description h2 {
+  font-size: 2rem;
+  color: #333; /* Darker text color for title */
+  margin-bottom: 10px;
+}
+
+.property-details .short-description p {
+  margin: 5px 0;
+  color: #666; /* Subtle color for secondary details */
+  font-weight: 700;
+}
+
+/* Large Image Section */
+.property-details .large-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.property-details .large-image img {
+  width: 100%; /* Full width of the container */
+  max-width: 400px; /* Limits the width of the large image */
+  height: 400px; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds shadow */
+}
+
+/* Thumbnail Images Section */
+.property-details .thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Spacing between thumbnails */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.property-details .thumbnails img {
+  width: 150px; /* Thumbnail size */
+  height: 100px; /* Fixed aspect ratio */
+  object-fit: cover; /* Ensure the image scales while preserving aspect ratio */
+  border-radius: 4px; /* Rounded corners */
+  border: 2px solid #ddd; /* Light gray border */
+  cursor: pointer; /* Indicates thumbnails are clickable */
+  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.property-details .thumbnails img:hover {
+  transform: scale(3); /* Slight zoom on hover */
+  border-color: #003366; /* Highlight border on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .property-details .thumbnails img .floor-plan{
+    width: 80px; /* Smaller thumbnails */
+    height: 60px; /* Adjusted aspect ratio */
+  }
+}
+
+.tab-content img {
+  width: 100%; /* Makes the floor plan responsive */
+  max-width: 800px; /* Limits the maximum size */
+  height: 500px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

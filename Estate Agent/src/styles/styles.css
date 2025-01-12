@@ -1,0 +1,21 @@
+.footer {
+  background-color: #003366; /* Dark blue background */
+  color: white; /* White text */
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 20px; /* Adds space above the footer */
+  border-top: 1px solid #ccc; /* Optional top border */
+}
+
+.footer a {
+  color: #ffcc00; /* Highlight color for links */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+.footer p {
+  margin: 5px 0; /* Small spacing between footer text */
+}

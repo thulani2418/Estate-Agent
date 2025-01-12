@@ -1,0 +1,99 @@
+.favorites {
+  background: #ffffff; /* Clean white background */
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  max-height: 80vh; /* Prevents the favorites from growing too tall */
+  overflow-y: auto; /* Adds a scrollbar if content overflows */
+  position: sticky; /* Keeps it fixed while scrolling */
+  top: 20px; /* Keeps it 20px from the top of the viewport */
+}
+
+.favorites h2 {
+  font-size: 1.5em;
+  color: #003366; /* Dark blue color */
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+}
+
+.favorite-item img {
+  width: 70px; /* Slightly larger thumbnail */
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px; /* Rounded corners */
+  margin-right: 10px;
+}
+
+.favorite-item p {
+  flex: 1; /* Ensures text takes up remaining space */
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.favorite-item button {
+  background-color: #ff4d4d; /* Red button */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.favorite-item button:hover {
+  background-color: #e63939; /* Darker red on hover */
+}
+
+.clear-favorites-btn {
+  display: block;
+  width: 50%;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 0.2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.clear-favorites-btn:hover {
+  background-color: #e63939; /* Darker red on hover */
+}
+
+.remove-zone {
+  margin-top: 15px;
+  padding: 15px;
+  border: 2px dashed #ff4d4d; /* Red dashed border */
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #ff4d4d;
+  background-color: #ffe6e6; /* Light red background */
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-zone:hover {
+  background-color: #ffcccc; /* Highlight when dragging over */
+}

@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.header {
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+a {
+  font-weight: 500;
+  color: #000004;
+  text-decoration: none;
+}
+a:hover {
+  color: #777887;
+}
+
+/* General Buttons */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1rem;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #7477cf;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+button:hover {
+  border-color: #dddde2;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ffffff;
+    color: #213547;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+    color: #000;
+  }
+}
+
+/* Root container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+/* Main Content Layout */
+.main-content {
+  display: flex; /* Enables flexbox layout */
+  align-items: flex-start; /* Aligns items to the top */
+  gap: 20px; /* Adds space between property list and favorites */
+}
+
+/* Property List (Left Side) */
+.properties-list {
+  flex: 3; /* Takes up more space than the favorites */
+  display: grid; /* Enables grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 columns */
+  gap: 20px; /* Space between property cards */
+}
+
+/* For the search input field */
+.search-bar input {
+  width: 300px; /* Adjust the width to make it longer */
+  padding: 8px; /* Add some padding for better appearance */
+  font-size: 16px; /* Adjust font size */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Optional: Style the search button */
+.search-bar button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #54579f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-bar button:hover {
+  background-color: #676bd5;
+}
+
+/* For the search input field */
+.advanced-search input {
+  width: 150px; /* Adjust the width to make it longer */
+  margin-right: 5px;
+  padding: 8px; /* Add some padding for better appearance */
+  font-size: 16px; /* Adjust font size */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Optional: Style the search button */
+.advanced-search button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #54579f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-left: 0;
+}
+
+.advanced-search button:hover {
+  background-color: #676bd5;
+}
+
+
+

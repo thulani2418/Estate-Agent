@@ -1,0 +1,30 @@
+.tabs .tab-buttons {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #ccc;
+}
+
+.tabs .tab-buttons button {
+  flex: 1;
+  padding: 0.5rem;
+  color: black;
+  text-align: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  border: 1px solid rgb(215, 212, 212); /* Adds black border for all tabs */
+}
+
+.tabs .tab-buttons button.active {
+  background-color: #003366;
+  color: white;
+}
+
+.tab-content {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
